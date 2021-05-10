@@ -29,7 +29,7 @@ fi
 if [[ -r $HOME/.cache/ytdl.temp ]]
 then
     echo "Installing missing packages"
-    pacman -S $(cat $HOME/.cache/ytdl.temp)
+    sudo pacman -S $(cat $HOME/.cache/ytdl.temp)
 else 
     echo "All needed packages already installed"
 fi
@@ -44,6 +44,7 @@ echo "export PATH=$HOME/.local/bin:$PATH" >> $HOME/.fishrc
 
 #cpoying ytmd.sh into .local/bin
 cp ./ytmd.sh $HOME/.local/bin/ytmd
+chmod +x $HOME/.local/bin/ytmd
 
 #cleaning cache file
 rm $HOME/.cache/ytdl.temp
