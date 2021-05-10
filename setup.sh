@@ -38,9 +38,9 @@ fi
 python -m pip install --upgrade youtube-dl
 
 #adding PATH in your bashrc ,zshrc and fishrc
-echo "export PATH=$HOME/.local/bin:$PATH" >> $HOME/.zshrc
-echo "export PATH=$HOME/.local/bin:$PATH" >> $HOME/.bashrc
-echo "export PATH=$HOME/.local/bin:$PATH" >> $HOME/.fishrc
+echo 'export PATH=$HOME/.local/bin:$PATH' >> $HOME/.zshrc
+echo 'export PATH=$HOME/.local/bin:$PATH' >> $HOME/.bashrc
+echo 'export PATH=$HOME/.local/bin:$PATH' >> $HOME/.fishrc
 
 #cpoying ytmd.sh into .local/bin
 cp ./ytmd.sh $HOME/.local/bin/ytd
