@@ -43,13 +43,11 @@ echo "export PATH=$HOME/.local/bin:$PATH" >> $HOME/.bashrc
 echo "export PATH=$HOME/.local/bin:$PATH" >> $HOME/.fishrc
 
 #cpoying ytmd.sh into .local/bin
-cp ./ytmd.sh $HOME/.local/bin/ytmd
-chmod +x $HOME/.local/bin/ytmd
+cp ./ytmd.sh $HOME/.local/bin/ytd
+chmod +x $HOME/.local/bin/ytd
 
 #cleaning cache file
 rm $HOME/.cache/ytdl.temp
 
-#showing first time help for using script
-ytmd --help
-
+echo "Restart terminal now for use script"
 
