@@ -1,26 +1,26 @@
 #!/usr/bin/bash
 #
-if [[ !-x /bin/python ]]
+if [[ ! -x /bin/python ]]
 then
     echo "Not have 'python' installed, will be installed"
     echo python > $HOME/.cache/ytdl.temp
 fi
-if [[ !-x /bin/ffmpeg ]]
+if [[ ! -x /bin/ffmpeg ]]
 then
     echo "Not have 'ffmpeg' installed, will be installed"
     echo ffmpeg >> $HOME/.cache/ytdl.temp
 fi
-if [[ !-x /bin/convert ]]
+if [[ ! -x /bin/convert ]]
 then
     echo "Not have 'Imagemagick' installed, will be installed"
     echo imagemagick >> $HOME/.cache/ytdl.temp
 fi
-if [[ !-x /bin/wl-paste ]]
+if [[ ! -x /bin/wl-paste ]]
 then
     echo "Not have 'wl-clipboard' installed, will be installed"
     echo wl-clipboard >> $HOME/.cache/ytdl.temp
 fi
-if [[ !-x /bin/pip ]]
+if [[ ! -x /bin/pip ]]
 then
     echo "Not have 'Python-pip' installed, will be installed"
     echo python-pip >> $HOME/.cache/ytdl.temp
